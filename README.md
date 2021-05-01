@@ -5,8 +5,7 @@ An application built using Node, Express, JS, HTML, and CSS. The purpose of this
  ![MIT](https://img.shields.io/badge/License-MIT-blue) ![JS](https://img.shields.io/badge/Language-JavaScript-yellow) ![EX](https://img.shields.io/badge/Language-Expressjs-green) ![ND](https://img.shields.io/badge/Language-Node-red)
 
  ## Table of Contents
-  * [Installation](#installation)
-  * [Usage](#usage)
+
   * [Contribution](#contribution)
   * [License](#license)
   * [Questions](#questions)
