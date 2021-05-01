@@ -2,7 +2,6 @@ const fs = require('fs');
 const path = require('path');
 
 
-
 validate = note => {
 
     if (!note.text || !note.title) {
@@ -13,17 +12,17 @@ validate = note => {
 
 write = (note, noteArr) => {
     
-    let noteObj = {title: note.title, message: note.body, id: note.id};
-    noteArr.push(noteObj);
+    noteArr.push(note);
 
     fs.writeFileSync(
         path.join(__dirname, 'db/db.json'),
-        JSON.stringify(noteArr)
+        JSON.stringify({notes: noteArr}, null, 1)
     );
+    return note;
 };
 
 
 // deleteNote = id => {
 
 // }
-module.exports = { validate, write };
+module.exports =  {validate, write};

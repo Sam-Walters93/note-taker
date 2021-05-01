@@ -1,21 +1,18 @@
 const router = require('express').Router();
-let noteJson = require('../../Develop/db/db.json')
+let { notes } = require('../../db/db')
 const uniqid = require('uniqid');
-const { validate, write } = require('../../Develop/notes')
+const {write} = require('../../notes')
 
 
 router.get('/notes', (req, res) => {
-    res.json(noteJson);
+    res.json(notes);
 });
 
 router.post('/notes', (req, res) => {
     req.body.id = uniqid();
 
-    res.json(write(req, notes));
+    res.json(write(req.body, notes));
+    
 });
 
-
-// router.delete('/notes/:id', (req, res) => {
-
-// });
 module.exports = router;
