@@ -1,6 +1,6 @@
 # Team-Profile-Generator
 
- ![MIT](https://img.shields.io/badge/License-MIT-blue) ![JS](https://img.shields.io/badge/Language-JavaScript-yellow) ![EX](https://img.shields.io/badge/Language-Expressjs-blue)
+ ![MIT](https://img.shields.io/badge/License-MIT-blue) ![JS](https://img.shields.io/badge/Language-JavaScript-yellow) ![EX](https://img.shields.io/badge/Language-Expressjs-green) ![ND](https://img.shields.io/badge/Language-Node-red)
 
  ## Table of Contents
   * [Video](#Video)
